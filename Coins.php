@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Coins v2.1</title>
+    <title>Coins v2.2</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -92,7 +92,7 @@ $data = $Coins->getCoins($coin,$flush);
             <div class="row">
                 <div class="col-md-12">
                     <p>Data source: CryptoCompare.com at <?php echo (date("Y-m-d h:i:s A",$data[0]));?></p>
-                    <p>Copyright &copy; 2017 Pathfinder Associates, Inc.</p>
+                    <p>Copyright &copy; 2018 Pathfinder Associates, Inc.</p>
                 </div>
             </div>
             <!-- /.row -->

@@ -1,8 +1,8 @@
 <?php
 // Class to get Coins data from CryptoCompare
-// Copyright © 2017 Pathfinder Associates, Inc.
+// Copyright © 2018 Pathfinder Associates, Inc.
 // Author Christopher Barlow
-// version 2.3
+// version 2.4
 // updated 08/16/2017
 
 // Include the required Class file
@@ -11,7 +11,7 @@ include('PAI_Cache.php');
 
 abstract class PAI_Coins_Abstract {
 
-	const version = "2.3";
+	const version = "2.4";
 	abstract function getCoins($coins,$flush);
 
 }
@@ -71,10 +71,7 @@ class PAI_Coins extends PAI_Coins_Abstract {
 
 	function opendb(&$msg) {
 		//function to open PDO database and return PDO object
-		$host = 'localhost';
-		$db   = 'altcoin';
-		$user = 'chrisbdev';
-		$pass = 'sara8565';
+		require ('DBconnect.php');
 		$charset = 'utf8';
 
 		$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
